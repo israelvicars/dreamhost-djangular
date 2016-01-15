@@ -10,3 +10,5 @@ django 1.9
 
 
 db: circleup/circleupdb/searchforjorb
+
+django superadminuser: circleupdog / whatscircleupwithyou
