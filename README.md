@@ -1,11 +1,10 @@
 # Project Notes
 
-django rest framework 3.3
-
-virtual environment
+Server
 
 python 3.4
-
+	virtual environment
 django 1.9
-
 mysql 5
+
+Client
