@@ -13,30 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
+from django.conf.urls import url
 from django.contrib import admin
-from django.contrib.auth.models import Engineer
-from rest_framework import routers, serializers, viewsets
 
-# Serializers define the API representation.
-class EngineerSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Engineer
-        fields = ('name', 'title', 'picture', 'status')
-
-# ViewSets define the view behavior.
-class EngineerViewSet(viewsets.ModelViewSet):
-    queryset = Engineer.objects.all()
-    serializer_class = EngineerSerializer
-
-# Routers provide an easy way of automatically determining the URL conf.
-router = routers.DefaultRouter()
-router.register(r'engineers', EngineerViewSet)
-
-# Wire up our API using automatic URL routing.
-# Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
