@@ -9,7 +9,3 @@ python 3.4
 django 1.9
 
 mysql 5
-
-db: circleup/circleupdb/searchforjorb
-
-django superadminuser: circleupdog / whatscircleupwithyou
