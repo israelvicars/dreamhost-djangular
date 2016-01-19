@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="company in companies | filter:allFilters">
+    <div class="thumbnail" ng-style="backgroundChange(company.image, hover)" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
+			<div class="video" ng-show="hover">
+				<a href="https://screen.yahoo.com/{{company.video}}.html" target="_blank">Watch Pitch Video</a>
+			</div>
+			<div class="name">{{company.name}}</div>
+      <div class="tagline">{{company.tagline}}</div>
+			<div class="flagship-founder-retailers">
+				<span class="glyphicon glyphicon-star"></span>
+				{{company.flagship}}
+			</div>
+			<div class="flagship-founder-retailers">
+				<span class="glyphicon glyphicon-user"></span>
+				{{company.founder}}
+			</div>
+			<div class="flagship-founder-retailers">
+				<span class="glyphicon glyphicon-shopping-cart"></span>
+				{{company.retailers}}
+			</div>
+    </div>
+  </div>
+</div>

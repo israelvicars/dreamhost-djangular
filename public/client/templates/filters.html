@@ -1,0 +1,37 @@
+<div class="row">
+	<div class="filters">
+		<div class="toggle" ng-click="showFilters = !showFilters">
+			<span ng-show="showFilters">HIDE </span>
+			<span ng-hide="showFilters">SHOW </span>
+			FILTERS
+		</div>
+		<div ng-show="showFilters">
+			<div class="page-header">
+				<span class="filter-label">FILTER</span>
+				<span class="reset" ng-click="resetFilters()">RESET</span>
+			</div>
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<div class="col-xs-12 col-sm-4">
+						<label>Category</label>
+						<select class="form-control" ng-model="categoryFilter">
+							<option value>All</option>
+							<option ng-repeat="category in categoryOptions" ng-value="category">{{category}}</option>
+						</select>
+					</div>
+					<div class="col-xs-12 col-sm-4" >
+						<label>Location</label>
+						<select class="form-control" ng-model="locationFilter">
+							<option value>All</option>
+							<option ng-repeat="(abbr, state) in locationOptions" ng-value="abbr">{{state}}</option>
+						</select>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<label>Search</label>
+						<input type="search" class="form-control" ng-model="searchFilter">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

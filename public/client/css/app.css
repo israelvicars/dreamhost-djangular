@@ -1,0 +1,144 @@
+body {
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+
+.filters {
+  background-color: #EEE;
+  margin: 0 15px 20px 15px;
+  padding: 10px;
+}
+
+.filters > .toggle {
+  color: #008EBA;
+  text-align: center;
+}
+
+
+.glyphicon {
+	color: #CCC;
+	margin-right: 5px;
+}
+
+.navbar {
+	background-color: #004660;
+  border-bottom: 2px solid rgba(48,48,48,0.5);
+	height: 48px;
+}
+
+.navbar-brand {
+	color: white;
+	float: left;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 32px;
+	font-weight: 900;
+	margin-top: -2px;
+}
+
+.navbar-nav>li>a {
+	color: rgba(179,200,207,1);
+	font-weight: 300;
+}
+
+.page-header {
+	border-bottom: 1px solid #444;
+}
+
+.page-header.results {
+	margin-top: 76px;
+}
+
+.filters .reset {
+  color: #008EBA;
+  float: right;
+}
+
+.filters .filter-label {
+  font-size: 1.2em;
+}
+
+.filters .page-header {
+  margin-top: 20px;
+}
+
+.results {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.results .count {
+	font-weight: bold;
+  margin-right: 10px;
+}
+
+::selection {
+  background-color: #F15723;
+  color: white;
+}
+
+.thumbnail {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 1px solid #CCC;
+  border-bottom: 4px solid #CCC;
+	border-radius: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+	width: 300px;
+  min-height: 500px;
+}
+
+.thumbnail .flagship-founder-retailers {
+  color: #444;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+	margin-left: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.thumbnail:hover {
+  border-color: #008EBC;
+}
+
+.thumbnail .name {
+  color: #444;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+	margin-top: 320px;
+	margin-left: 10px;
+}
+
+.thumbnail .tagline {
+  color: #000;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+.thumbnail .video {
+  left: 25%;
+  position: absolute;
+}
+.thumbnail .video > a, .thumbnail .video > a:hover {
+  color: white;
+  font-size: 22px;
+	font-weight: 600;
+  text-decoration: none;
+}
+
+
+ul.nav>li>a:hover {
+  background-color: rgba(0,55,76,1);
+  color: #FFF;
+}
+
+ul.nav>li.active>a, ul.nav>li.active>a:hover {
+  background-color: #006D95;
+  color: #FFF;
+	font-weight: 600;
+}

@@ -1,2 +1,4 @@
 REFERENCE.md
 .DS_Store
+env/
+passenger_wsgi.pyc
